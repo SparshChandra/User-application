@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+:root{
+  --primary-color:#ce8dec;
+  --secondary-color:#a8a8a8;
+}
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Open Sans',sans-serif;
+  background:#fff;
+  color:#333;
+  line-height: 1.6;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  color:#333;
+  text-decoration: none;
+}
+
+h1 h2{
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+p{
+  margin:10px 0;
+  }
+
+img{
+  width:100%;
+}
+
+.container{
+  overflow: hidden;
+  /* padding:1rem; */
+  height: 100vh;
+}
+
+.container .hero{
+  float: right;
+  width:65%;
+  padding:70px 40px;
+  overflow: hidden;
+  font-size: 1.4rem;
+  margin: 5px 0 22px 0;
+  border:none;
+}
+
+.container .hero h1 span{
+  color:var(--secondary-color);
+  font-size:2.5rem;
+  
+}
+
+
+.container #aside{
+float: left;
+width:30%;
+height: 100%;
+overflow: hidden;
+}
+
+
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 20px; */
+  padding: 10px 10px;
+  
+  
+}
+ .form label{
+  display: inline-block;
+  /* margin-bottom:5px; */
+}
+
+/* .form input{
+  display: inline-block;
+  width:15rem;
+  padding:2px;
+  border:1px #ccc solid;
+} */
+
+input[type=email], input[type=password] , input[type=date] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #b706fd11;
+}
+
+
+.btn{
+  float: right;
+  font-size:15px;
+  color:#fff;
+  background:var(--primary-color);
+  padding:5px 10px;
+  border:none;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background:#c386ed;
+  color:#fff;
+}
+
+#sign{
+  text-align: center;
+  /* background:#444; */
+  color:var(--secondary-color);
+  padding:3px;
+  margin:81px;
+  font-size:20px;
+}
+
+.link:hover{
+ color: var(--primary-color);
+}
+
+

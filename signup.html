@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <title>User Profile</title>
+</head>
+<body>
+<div class="container" id="showcase">
+  
+  <header class="hero">
+    <h1> <span>We are</span> NUVA</h1>
+    <p>Welcome Back! Log into your account to view today's clients :</p>
+    <div class="form" >
+      <form id="signup1">
+        <div>
+          <i class="fas fa-envelope fa-1x"></i>
+          <label>Email</label>
+            <input type="email" id="email">
+          
+        </div>
+        <div>
+          <i class="fas fa-user-lock fa-1x"></i>
+          <label>Password</label>
+            <input type="password" id="password">
+          
+        </div>
+        <div>
+          <i class="fas fa-birthday-cake fa-1x"></i>
+          <label>Date of birth</label>
+         <input type="date" id="date">  
+        </div>
+        <div>
+          <i class="fas fa-user-plus fa-1x"></i>
+          <label>Position</label>
+        <select  id="position">
+          <option value="admin">Admin</option>
+          <option value="user">User</option>
+          <option value="emp">Employee</option>
+
+        </select>
+        </div>
+        <div>
+          <!-- <a href="index.html" class="btn">
+            <i class="fas fa-chevron"></i>
+            SIGN-UP
+          </a> -->
+          <button class="btn" type="submit">SIGN-UP</button>
+        </div>
+      </form>
+    </div>
+    <!-- <div id="sign">
+      Don't have an account?<a href="signup.html" class="link"  id="signup">SIGN-UP</a>
+    </div> -->
+  </header>
+  
+ <section id="aside">
+   <img src="img/back.jpg" alt="background">
+ </section>
+
+
+</div>
+<script src="uuid.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment-with-locales.min.js"></script>
+<script src="./functions.js"></script>
+<script src="./signup.js"></script>
+<script src="./user.js"></script>
+</body>
+</html>  

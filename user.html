@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="../user-app/user.css">
+  <link rel="stylesheet" href="modal.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <title>User Profile</title>
+</head>
+<body>
+  
+  <div class="profile-card">
+    <div class="card-header">
+        <div class="pic">
+            <img  src="./pic.png" alt="">
+        </div>
+        
+    <div id="name"></div>
+    <div id="email"></div>
+    <div id="pos"></div>
+    <div id="dob"></div>
+    
+    <div class="sm">
+          <div class="card-footer">
+        <div class="numbers">
+            <div class="item">
+                <button id="deleteBtn" class="button"><i class="fas fa-user-minus fa-1x"></i></button>
+             </div>
+            
+        <div class="border"></div>
+        <div class="item">
+            
+            <button id="modal-btn" class="button"> <i class="fas fa-edit fa-1x"></i></button>
+            
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+<div id="my-modal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>User Details</h2>
+    </div>
+    <div class="modal-body">
+      <form>
+        
+         <div>
+            <label>Name</label>
+            <input type="text" id="editname">
+        </div>
+      <div>
+        
+        <label>Email</label>
+          <input type="email" id="editemail">
+        
+      </div>
+      <div>
+        
+        <label>Password</label>
+          <input type="password" id="editpassword">
+        
+      </div>
+      <div>
+       
+        <label>Date of birth</label>
+       <input type="date" id="editdate">  
+      </div>
+      <div>
+        
+        <label>Position</label>
+      <select  id="editposition">
+        <option value="admin">Admin</option>
+        <option value="user">User</option>
+        <option value="emp">Employee</option>
+
+      </select>
+      </div>
+      
+      <div>
+          <button id="submitmodal">Submit</button>
+          <button id="cancelmodal">Cancel</button>
+       </form>
+      </div>
+    <div class="modal-footer">
+      <h3>Edit Form</h3>
+    </div>
+  </div>
+</div>
+
+
+<script src="modal.js"></script>
+
+<script src="uuid.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment-with-locales.min.js"></script>
+<script src="./functions.js"></script>
+<script src="./signup.js"></script>
+<script src="./user.js"></script>
+</body>
+</html>  

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <title>User Profile</title>
+</head>
+<body>
+<div class="container" id="showcase">
+  
+  <header class="hero">
+    <h1> <span>We are</span> NUVA</h1>
+    <p>Welcome Back! Log into your account to view today's clients :</p>
+    <div class="form" >
+      <form id= "login1" action="./login.js"> 
+
+        <div>
+
+          <i class="fas fa-envelope fa-1x"></i>
+          <label>Email</label>
+          <input type="email" id="email">
+        </div>
+        <div>
+          <i class="fas fa-user-lock fa-1x"></i>
+          <label>Password </label>
+            <input type="password" id="password">
+        </div>
+        <div>
+          <!-- <a href="#" class="btn">
+            <i class="fas fa-chevron"></i>
+            LOG-IN
+          </a> -->
+          <button class="btn" id="loginBtn" type="submit">LOG-IN</button>
+        </div>
+      </form>
+    </div>
+    <div id="sign">
+      Don't have an account?<a href="signup.html" class="link"  id="signup">SIGN-UP</a>
+    </div>
+  </header>
+  
+ <section id="aside">
+   <img src="img/back.jpg" alt="background">
+ </section>
+
+</div>
+<script src="uuid.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment-with-locales.min.js"></script>
+<script src="./functions.js"></script>
+<script src="./login.js"></script>
+</body>
+</html>  
